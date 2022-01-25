@@ -29,6 +29,8 @@ const gameboard = (() => {
         
         if(game.isWinner) {
             updateDisplay(event);
+            const para = document.getElementById('playthrough');
+            para.innerText = `${game.activePlayer.name} is the winner!`
             for(i = 0; i < squares.length; i++) {
                 squares[i].removeEventListener('click', updateBoard);
                 squares[i].removeEventListener('click', updateDisplay);

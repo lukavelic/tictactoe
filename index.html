@@ -12,7 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <title>Tic Tac Toe</title>
+    <div class="controls">
+        <button onClick="window.location.reload();">Restart</button>
+        <p>Player 1 - X</p>
+        <p>Player 2 - O</p>
+        <p id="playthrough"></p>
+    </div>
     <div class="gameboard">
         <div class="tile" data-position="0"></div>
         <div class="tile" data-position="1"></div>
