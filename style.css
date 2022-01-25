@@ -1,0 +1,36 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    min-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("tictactoe.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    background-size: 1920px 1080px;
+    display: grid;
+    grid-template-columns: 630px 600px 600px;
+    grid-template-rows: 50px 800px;
+}
+
+.gameboard {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 660px;
+
+}
+
+.tile {
+    background-color: transparent;
+    color: black;
+    font-size: 9em;
+    text-align: center;
+    height: 220px;
+    width: 200px;
+    outline: none;
+}
